@@ -1,0 +1,119 @@
+:root {
+    font-size: 20px;
+    --header-color: #0E6655;
+    --footer-color: #138D75;
+    --card-bg: #FAE5D3;
+    --bg: #EAFAF1;
+    --light-text: #FEF5E7;
+    --main-font: "Kreon", serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+}
+
+header {
+    background-color: var(--header-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: var(--light-text);
+    margin: 1rem 0;
+    user-select: none;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    width:25%;
+    margin: 0 0 1rem;
+}
+
+header nav a {
+    font-size: 1rem;
+    color: var(--light-text);
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+header nav a:hover {
+    box-shadow: 0 0.1rem var(--light-text);
+    transform: scale(1.1);
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+#cards-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 4rem 0 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-bg);
+    padding: 2rem 1rem 3rem;
+    border-radius: 1rem;
+}
+
+.card img {
+    border-radius: 1rem;
+}
+
+.card h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card p {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#important-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#important-info h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+#important-info p{
+    font-weight: 500;
+    text-align: justify;
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--footer-color);
+    color: var(--light-text);
+    padding: 1rem 0;
+    margin-top: auto;
+    user-select: none;
+}
